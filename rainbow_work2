@@ -1,0 +1,27 @@
+import turtle
+
+rainbow = ["red", "orange", "yellow", "green", "blue", "purple"]
+
+# Write whatever code you want here!
+ari = turtle.Turtle()
+ari.width(5)
+ari.speed(0)
+ari.penup()
+ari.back(80)
+ari.pendown()
+
+for x in range(0, 4):
+    for rainbow_color in rainbow:
+        ari.color(rainbow_color)
+        ari.forward(50)
+        ari.right(60)
+        ari.forward(20)
+        for side in [1, 1, 1, 1]:    
+            ari.forward(20)
+            ari.right(60)   
+    ari.penup()
+    ari.forward(150)
+    ari.right(90)
+    ari.pendown()
+
+ari.hideturtle()
